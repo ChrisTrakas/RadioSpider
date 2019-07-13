@@ -4,6 +4,8 @@ import java.util.Queue;
 import java.util.Set;
 
 public class Action {
+	
+	private static String url_1 // =  "the root url"l;
 	private static int limit =20;
 	private static Set<String> visitedURLs = new HashSet<>();
 	private static Set<String> foundURLs = new HashSet<>();
@@ -54,7 +56,7 @@ public class Action {
 	
 	 public static void main(String args[]){
 		
-		 addURLs("https://orlplastic.gr/" );
+		 addURLs(url_1);
 		 
 		 
 		 System.out.println(visitedURLs.size());
